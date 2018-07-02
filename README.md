@@ -72,7 +72,7 @@ There's no way to capture errors or results, this queue is only for controlling 
 
 #### `done` callback
 
-Unlike [atlas-concurrent-queue](https://github.com/atlassubbed/atlas-concurrent-queue#readme), there's no callback we can call when "all of our jobs are done". I don't think it makes a ton of sense to have a callback for this, since there isn't a well-defined moment when our jobs finish:
+Unlike [atlas-concurrent-queue](https://github.com/atlassubbed/atlas-concurrent-queue#readme), there's no callback we can call when "our queue is done". I don't think it makes a ton of sense to have a callback for this, since there isn't a well-defined moment when our throttler is finished:
 
   1. Do we capture the end of each job, calling `done` when all jobs have returned? 
   2. Do we call `done` when the queue has been exausted and all jobs have been executed? 
