@@ -56,7 +56,7 @@ for (let i = keywords.length; i--;){
 }
 ```
 
-In the example above, we have 20000 search jobs, but they are run every &tau; milliseconds. This helps keep us under the radar and prevents us from overloading our system. Note that the throttler does not enforce any rules regarding concurrency: if each search job takes one second, then ~2 search jobs will be running at any given time. You can place `queue.push` calls inside of jobs for a [concurrent queue](https://github.com/atlassubbed/atlas-concurrent-queue#readme) to limit the concurrency of your jobs, in addition to limiting the rate at which they are fired.
+In the example above, we have 20,000 search jobs, but they are run every &tau; milliseconds. This helps keep us under the radar and prevents us from overloading our system. Note that the throttler does not enforce any rules regarding concurrency: if each search job takes one second, then ~2 search jobs will be running at any given time. You can place `queue.push` calls inside of jobs for a [concurrent queue](https://github.com/atlassubbed/atlas-concurrent-queue#readme) to limit the concurrency of your jobs, in addition to limiting the rate at which they are fired.
 
 ## todo
 
