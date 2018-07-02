@@ -6,8 +6,17 @@
     "test-server": "mocha --colors --watch --recursive './test/**/*.test.js'",
     "test": "mocha --colors --recursive './test/**/*.test.js'"
   },
-  "main": "./src/index.js",
-  "keywords": [],
+  "main": "./src/ThrottledQueue.js",
+  "keywords": [
+    "atlassubbed",
+    "utils",
+    "utility",
+    "queue",
+    "concurrency",
+    "throttled",
+    "throttling",
+    "async"
+  ],
   "author": "atlassubbed <atlassubbed@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
