@@ -31,8 +31,9 @@ For this example, let's assume we have the following functions:
 ```javascript
 const { readFileSync } = require("fs");
 const ThrottledQueue = require("atlas-throttled-queue");
+const getKeywords = require("./filter-stop-words");
 const getBingResults = require("./bing-search-client");
-const filter = require("./filter-stop-words");
+const upsertLink = require("./upsert-link")
 
 // make a queue
 const tau = 500;
