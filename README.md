@@ -78,7 +78,3 @@ Unlike [atlas-concurrent-queue](https://github.com/atlassubbed/atlas-concurrent-
   2. Do we call `done` when the queue has been exausted and all jobs have been executed? 
 
 It doesn't seem very well-defined, but I could be wrong and I'd be open to ideas.
-
-#### streams
-
-You might have noticed we aren't using streams in the examples above. This is for simplicity. With tasks like this, it's better to use streams to limit your memory usage. 
